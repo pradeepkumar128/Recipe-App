@@ -1,0 +1,88 @@
+/* Resetting default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Setting up basic styles for the body */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+/* Container styles */
+.container {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+/* Search box styles */
+.searchBox {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.searchBox input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.searchBox button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.searchBox button:hover {
+  background-color: #0056b3;
+}
+
+/* Recipe card styles */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.recipeData {
+  flex: 0 0 calc(25% - 20px); /* 25% width for each column with margin */
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.product_title {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.product_savings {
+  font-style: italic;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.product_instructions {
+  margin-bottom: 10px;
+}
+
+.product_ingredients {
+  font-weight: bold;
+}
+.product_instructions {
+  max-height: calc(1.2em * 5); /* Assuming each line height is 1.2em */
+  overflow: hidden;
+  margin-bottom: 10px;
+}
